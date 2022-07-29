@@ -1,0 +1,28 @@
+.hover__me--btn {
+  border: none;
+  outline: none;
+  background: crimson;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.hover__me--btn:hover {
+  background-color: transparent;
+  border: 1px solid crimson;
+  color: crimson;
+  transform: translate(5px, 5px);
+}
+
+.hover__me--comp {
+  display: none;
+  transition: all 3s ease;
+}
+
+.hover__me--btn:hover + .hover__me--comp {
+  display: block;
+  transform: translate(5px, 5px);
+}
